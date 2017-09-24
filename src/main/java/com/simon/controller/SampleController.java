@@ -1,6 +1,5 @@
 package com.simon.controller;
 
-import com.simon.Util.MqUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
@@ -14,16 +13,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @Controller
 public class SampleController {
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        MqUtil.sendMessage("taotao");
-        return "Hello World fc!";
-    }
 
     @RequestMapping("/index")
     public void index(Model model) {
-        MqUtil.sendMessage("sxt-test-message");
         System.out.println("index-test-controller");
 //        return "index";
     }
