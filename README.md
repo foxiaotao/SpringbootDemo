@@ -1,4 +1,4 @@
 ﻿# rabbitMq，springMail
-springboot
-自己发送，自己接受
-http://blog.csdn.net/styhm/article/details/49738719
+都是基于springboot环境
+
+rabbitmq配置，http://blog.csdn.net/styhm/article/details/49738719
